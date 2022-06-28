@@ -2,15 +2,13 @@
 // а на выходе показывает все чётные числа от 1 до N.
 Console.WriteLine ("Введите число:");
 int N =Convert.ToInt32(Console.ReadLine ());
-int count = 0;
-
-if (count <=N)
+int count = 1;
+while (count <=N)
 {
-    count=count%2;
+    { if (count%2==0)
+    Console.WriteLine (count);
+    }
     count++;
 }
-if (count ==0)
-{
-    Console.WriteLine (count);
-}
-Console.WriteLine (count);
+
+
